@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'UnifrakturCook', cursive;
+    color: #f0f8ff;
+    background-color: #001f3f; 
+    line-height: 1.6;
+}
+
+header {
+    background-color: #064a6f; 
+    color: #e0f7fa; 
+    font-size: 1.5rem;
+    padding: .8em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+section#home {
+    background-image: url('Trs.jpg');
+    position: relative;
+    height: 600px;
+    overflow:hidden;
+    font-size: 2rem;
+}
+h1{
+    font-size: 3rem;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    color: #e0f7fa; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 12px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #e0f7fa; 
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #64c5e6; 
+    color: #ffffff; 
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+section#home {
+    background-color: #4b8dcf; 
+    border-radius: 12px;
+    margin: 2em auto;
+}
+
+section#lore, section#gallery, section#contact {
+    background-color: #1c6d96; 
+    border-radius: 12px;
+    margin: 2em auto;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.gallery-image {
+    border-radius: 12px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+footer {
+    background-color: #004d99; 
+    color: #e0f7fa; 
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+}
+
+.social-icons {
+    margin-bottom: 1em;
+}
+
+.social-icon {
+    margin: 0 0.5em;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+a, .gallery-image, .social-icon {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
